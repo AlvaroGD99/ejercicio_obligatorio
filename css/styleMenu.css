@@ -34,6 +34,7 @@ img {
 body {
     font-family: var(--fuenteprincipal);
     font-size: var(--fontsize);
+    background-color: var(--colorsecundario);
 }
 
 .container {
@@ -84,6 +85,7 @@ header nav .hamburguesa {
 header .logo {
     float: left;
     max-width: 100px;
+    background-color: var(--colorsecundario);
 }
 
 header .hamburguesa {
@@ -152,7 +154,7 @@ footer a:hover {
 /* fin footer */
 
 
-/* inicio ourservices */
+/* inicio main */
 
 main .container {
     padding: calc(var(--margingrid)*1) var(--margingrid);
@@ -164,12 +166,12 @@ main .container img{
 
 main .container .grid section {
     
-    
+    padding: calc(var(--margingrid)*1) calc(var(--margingrid)*4);
     position: relative;
 }
 
 main .container .title h2 {
-    color: black;
+    color: white;
     font-family: var(--fuentesecundaria);
     font-size: 3em;
     text-align: center;
@@ -201,32 +203,49 @@ main .container .title .underline span {
 
 main  .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: var(--margingrid);
     margin-bottom: calc(var(--margingrid)*2);
 }
 
 main .grid article{
-    padding: calc(var(--margingrid)*.7);
+    padding: calc(var(--margingrid)*.7) 0;
 }
 main .grid h3 {
-    
+    color: white;
     font-style: var(--fuenteprincipal);
     font-weight: 700;
     margin-bottom: calc(var(--margingrid)*.5);  
+    font-size: .9em;
 }
 
-main .grid h4 {
+main h4 {
+   
+    font-style: var(--fuenteprincipal);
+    font-weight: 700;
+    color: white;
+    font-size: .7em;  
+    padding: var(--margingrid);
+    
+    
+}
+
+main h5 {
    
     font-style: var(--fuenteprincipal);
     font-weight: 700;
     color: var(--colorprincipal);
-    font-size: .7em;  
-    margin-bottom: calc(var(--margingrid)*.5);  
+    font-size: .9em;  
+    
+    float: right;  
+    transform: translatey(-23px);
+    
 }
 
 main .grid p{
     font-size: .7em;
+    color: white;
+    margin-bottom: .5em;
 }
 
 main .grid .more{
@@ -234,25 +253,34 @@ main .grid .more{
     font-size: .7em;
     color:var(--colorprincipal);
     font-weight: 700;
+    
 }
 
-main .grid .fecha{
-     padding: calc(var(--margingrid));
-     position: absolute;
-     background-color: rgba(240, 62, 62, 0.788);
-     text-align: center;
-     align-items: center;
-     color: white;
-     font-weight: 700;
-     font-size: 1em;
-     justify-content: center;
-     top: 0px;
-     left:0px;
-            
+main .grid .img{
+    margin-top: var(--margingrid);
+    
 }
 
+main .grid .grid1 .textos .menus div:hover {
+background-color: var(--colorprincipal);
 
+}
 
+main .grid .grid1 .textos .menus {
+    margin: calc(var(--margingrid)*1.5) calc(var(--margingrid)*.5);
+}
+
+.underline{
+    width: 10%;
+}
+.underline hr{
+    border-color: var(--colorprincipal);
+}
+
+main .grid .grid1 .textos .oferta p {
+    padding: var(--margingrid) 0;
+
+}
 /* mediaquerys */
 
 
@@ -269,28 +297,14 @@ main .grid .fecha{
         text-align: left;
         
     }
-
-    f
-
-    main  .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
     
+    footer .container p{
+        margin-left: calc(var(--margingrid)*2);
+        
+    }
 
-    main .grid .fecha{
-        padding: calc(var(--margingrid)*1.5);
-        position: absolute;
-        background-color: rgba(240, 62, 62, 0.788);
-        text-align: center;
-        align-items: center;
-        color: white;
-        font-weight: 700;
-        font-size: 1em;
-        justify-content: center;
-        top: 0px;
-        left:0px;
-               
-   }
+  
+    
 }
 
 @media(min-width: 1004px) {
@@ -308,4 +322,30 @@ main .grid .fecha{
         border: 0px;
         padding: 0.5em calc(var(--margingrid));
     }
+
+    main .grid .grid1{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: repeat(1,1fr);
+
+    }
+
+    main .grid .grid1 .imagenes .img{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin-left: calc(var(--margingrid)*5);
+       
+        
+    }
+
+    main .grid .grid1 .imagenes article{
+        padding:calc(var(--margingrid)*2);
+    }
+
+    main .grid .grid1 .textos {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
 }
