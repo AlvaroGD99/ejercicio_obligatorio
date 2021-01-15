@@ -155,7 +155,17 @@ footer a:hover {
 /* inicio ourservices */
 
 main .container {
-    padding: calc(var(--margingrid)*3) var(--margingrid);
+    padding: calc(var(--margingrid)*1) var(--margingrid);
+}
+
+main .container img{
+    display: block;
+}
+
+main .container .grid section {
+    
+    
+    position: relative;
 }
 
 main .container .title h2 {
@@ -189,109 +199,63 @@ main .container .title .underline span {
     font-weight: 700;
 }
 
-main #ourservices .grid {
+main  .grid {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--margingrid);
+    margin-bottom: calc(var(--margingrid)*2);
 }
 
-main #ourservices .grid article {
-    padding: calc(var(--margingrid)*2) 0;
-    border-bottom: 1px solid #aaa;
+main .grid article{
+    padding: calc(var(--margingrid)*.7);
 }
-
-main #ourservices .grid article div i {
-    color: var(--colorprincipal);
-    font-size: 150%;
-    border: 1px solid var(--colorprincipal);
-    padding: 0.5em;
-}
-
-main #ourservices .grid article h3 {
+main .grid h3 {
+    
+    font-style: var(--fuenteprincipal);
     font-weight: 700;
-    margin: 10px 0;
-    font-size: 110%;
+    margin-bottom: calc(var(--margingrid)*.5);  
 }
 
-main section p {
-    color: #666;
-    line-height: 1.25;
-    margin-bottom: 10px;
+main .grid h4 {
+   
+    font-style: var(--fuenteprincipal);
+    font-weight: 700;
+    color: var(--colorprincipal);
+    font-size: .7em;  
+    margin-bottom: calc(var(--margingrid)*.5);  
 }
 
-.enlace {
+main .grid p{
+    font-size: .7em;
+}
+
+main .grid .more{
     text-decoration: none;
-    color: var(--colorprincipal);
+    font-size: .7em;
+    color:var(--colorprincipal);
     font-weight: 700;
 }
 
-.fa-truck {
-    transform: rotateY(180deg);
+main .grid .fecha{
+     padding: calc(var(--margingrid)*1.5);
+     position: absolute;
+     background-color: rgba(240, 62, 62, 0.788);
+     text-align: center;
+     align-items: center;
+     color: white;
+     font-weight: 700;
+     font-size: 1em;
+     justify-content: center;
+     top: 0px;
+     left:0px;
+            
 }
 
-/* fin ourservices */
 
-/* inicio aboutus */
-
-main #aboutus .flex .column {
-    margin: var(--margingrid) 0;
-}
-
-main #aboutus .column h3 {
-    font-weight: 700;
-    font-size: 110%;
-}
-
-main #aboutus .column h4 {
-    margin: 0.8em 0;
-    color: var(--colorprincipal);
-}
-
-main #aboutus .imagen {
-    width: 90%;
-    margin: 0 auto;
-}
-
-main #aboutus .imagen .marco {
-    border: 3px solid var(--colorprincipal);
-    transform: rotateZ(10deg);
-    transition: 1s;
-}
-
-main #aboutus .imagen .marco img {
-    transform: rotateZ(-10deg);
-    transition: 1s;
-}
-
-main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
-    transform: rotateZ(0deg);
-}
-
-/* fin aboutus */
 
 /* mediaquerys */
 
-@media(min-width: 600px) {
-    main #ourservices .grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--margingrid);
-    }
-    main #ourservices .grid article:last-child {
-        grid-column: 1/3;
-    }
-    main #ourservices .grid article {
-        border-bottom: 0px;
-        border-left: 1px solid #aaa;
-        padding: var(--margingrid);
-    }
-    main #aboutus .flex {
-        display: flex;
-    }
-    main #aboutus .imagen {
-        width: 80%;
-    }
-    main #aboutus {
-        margin-bottom: 2em;
-    }
-}
+
 
 @media(min-width: 768px) {
     header .nav-top a span {
@@ -304,12 +268,10 @@ main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
     footer {
         text-align: left;
     }
-    main #ourservices .grid {
+    main  .grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    main #ourservices .grid article:last-child {
-        grid-column: 3/4;
-    }
+    
 }
 
 @media(min-width: 1004px) {
