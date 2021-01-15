@@ -151,94 +151,25 @@ footer a:hover {
 
 /* fin footer */
 
-/* inicio hero */
-
-.hero {
-    background-image: url(../images/fondo.jpg);
-    height: 60vh;
-    background-position: center center;
-    background-size: cover;
-    background-color: #777;
-    background-blend-mode: multiply;
-    color: white;
-    display: flex;
-}
-
-.hero .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    padding: var(--margingrid);
-}
-
-.hero h1 {
-    font-family: var(--fuentesecundaria);
-    font-size: 2.25em;
-}
-
-.hero h2 {
-    color: var(--colorprincipal);
-    margin: var(--margingrid) 0;
-    font-size: 1.25em;
-}
-
-.hero p {
-    font-size: 1.15em;
-}
-
-.boton {
-    display: inline-block;
-    background-color: var(--colorprincipal);
-    padding: var(--margingrid);
-    color: white;
-    text-decoration: none;
-    margin: var(--margingrid) 0;
-    border: 1px solid var(--colorprincipal);
-}
-
-.boton:hover {
-    background: transparent;
-    color: var(--colorprincipal);
-}
-
-.boton:hover i {
-    transform: translateX(5px);
-    transition: 0.5s;
-}
-
-.hero .social {
-    display: flex;
-    justify-content: space-between;
-    width: 150px;
-}
-
-.hero .social a {
-    color: white;
-    text-decoration: none;
-    font-size: 2em;
-}
-
-/* fin hero */
 
 /* inicio ourservices */
 
-main section {
+main .container {
     padding: calc(var(--margingrid)*3) var(--margingrid);
 }
 
-main section h2 {
+main .container .title h2 {
     color: black;
     font-family: var(--fuentesecundaria);
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
 }
 
-main section h2 span {
+main .container  .title h2 span {
     color: var(--colorprincipal);
 }
 
-main section .underline {
+main .container .title .underline {
     position: relative;
     width: 100px;
     margin: 0 auto;
@@ -246,14 +177,14 @@ main section .underline {
     margin-bottom: var(--margingrid);
 }
 
-main section .underline hr {
+main .container .title .underline hr {
     position: absolute;
     width: 100%;
     top: -1px;
     border-color: var(--colorprincipal);
 }
 
-main section .underline span {
+main .container .title .underline span {
     color: var(--colorprincipal);
     font-weight: 700;
 }
