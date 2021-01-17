@@ -151,7 +151,7 @@ footer a:hover {
 
 /* fin footer */
 
-/* inicio hero */
+/* inicio Index */
 
 .hero {
     background-image: url(../images/fondo.jpg);
@@ -223,22 +223,22 @@ footer a:hover {
 
 /* inicio ourservices */
 
-main section {
+.mainIndex section {
     padding: calc(var(--margingrid)*3) var(--margingrid);
 }
 
-main section h2 {
+.mainIndex section h2 {
     color: black;
     font-family: var(--fuentesecundaria);
     font-size: 2em;
     text-align: center;
 }
 
-main section h2 span {
+.mainIndex section h2 span {
     color: var(--colorprincipal);
 }
 
-main section .underline {
+.mainIndex section .underline {
     position: relative;
     width: 100px;
     margin: 0 auto;
@@ -246,41 +246,41 @@ main section .underline {
     margin-bottom: var(--margingrid);
 }
 
-main section .underline hr {
+.mainIndex section .underline hr {
     position: absolute;
     width: 100%;
     top: -1px;
     border-color: var(--colorprincipal);
 }
 
-main section .underline span {
+.mainIndex section .underline span {
     color: var(--colorprincipal);
     font-weight: 700;
 }
 
-main #ourservices .grid {
+.mainIndex #ourservices .grid {
     display: grid;
 }
 
-main #ourservices .grid article {
+.mainIndex #ourservices .grid article {
     padding: calc(var(--margingrid)*2) 0;
     border-bottom: 1px solid #aaa;
 }
 
-main #ourservices .grid article div i {
+.mainIndex #ourservices .grid article div i {
     color: var(--colorprincipal);
     font-size: 150%;
     border: 1px solid var(--colorprincipal);
     padding: 0.5em;
 }
 
-main #ourservices .grid article h3 {
+.mainIndex #ourservices .grid article h3 {
     font-weight: 700;
     margin: 10px 0;
     font-size: 110%;
 }
 
-main section p {
+.mainIndex section p {
     color: #666;
     line-height: 1.25;
     margin-bottom: 10px;
@@ -300,41 +300,376 @@ main section p {
 
 /* inicio aboutus */
 
-main #aboutus .flex .column {
+.mainIndex #aboutus .flex .column {
     margin: var(--margingrid) 0;
 }
 
-main #aboutus .column h3 {
+.mainIndex #aboutus .column h3 {
     font-weight: 700;
     font-size: 110%;
 }
 
-main #aboutus .column h4 {
+.mainIndex #aboutus .column h4 {
     margin: 0.8em 0;
     color: var(--colorprincipal);
 }
 
-main #aboutus .imagen {
+.mainIndex #aboutus .imagen {
     width: 90%;
     margin: 0 auto;
 }
 
-main #aboutus .imagen .marco {
+.mainIndex #aboutus .imagen .marco {
     border: 3px solid var(--colorprincipal);
     transform: rotateZ(10deg);
     transition: 1s;
 }
 
-main #aboutus .imagen .marco img {
+.mainIndex #aboutus .imagen .marco img {
     transform: rotateZ(-10deg);
     transition: 1s;
 }
 
-main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
+.mainIndex #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
     transform: rotateZ(0deg);
 }
 
 /* fin aboutus */
+
+
+/* inicio  Blog */
+
+.mainIndex .containerBlog {
+    padding: calc(var(--margingrid)*1) var(--margingrid);
+}
+
+.mainIndex .containerBlog img{
+    display: block;
+}
+
+.mainIndex .containerBlog .grid section {
+    
+    
+    position: relative;
+}
+
+.mainIndex .containerBlog .title h2 {
+    color: black;
+    font-family: var(--fuentesecundaria);
+    font-size: 3em;
+    text-align: center;
+}
+
+.mainIndex .containerBlog  .title h2 span {
+    color: var(--colorprincipal);
+}
+
+.mainIndex .containerBlog .title .underline {
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: var(--margingrid);
+}
+
+.mainIndex .containerBlog .title .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--colorprincipal);
+}
+
+.mainIndex .containerBlog .title .underline span {
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+.mainIndex .containerBlog .gridBlog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--margingrid);
+    margin-bottom: calc(var(--margingrid)*2);
+}
+
+.mainIndex .containerBlog .gridBlog article{
+    padding: calc(var(--margingrid)*.7);
+}
+.mainIndex .containerBlog .gridBlog h3 {
+    
+    font-style: var(--fuenteprincipal);
+    font-weight: 700;
+    margin-bottom: calc(var(--margingrid)*.5);  
+}
+
+.mainIndex .containerBlog .gridBlog h4 {
+   
+    font-style: var(--fuenteprincipal);
+    font-weight: 700;
+    color: var(--colorprincipal);
+    font-size: .7em;  
+    margin-bottom: calc(var(--margingrid)*.5);  
+}
+
+.mainIndex .containerBlog .gridBlog p{
+    font-size: .7em;
+}
+
+.mainIndex .containerBlog .gridBlog .more{
+    text-decoration: none;
+    font-size: .7em;
+    color:var(--colorprincipal);
+    font-weight: 700;
+}
+
+.mainIndex .containerBlog .gridBlog section article .fechaBlog{
+    padding: calc(var(--margingrid));
+    position: absolute;
+    background-color: rgba(240, 62, 62, 0.788);
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    justify-content: center;
+    top: 0px;
+    left:0px;
+           
+}
+
+/* inicio Menu */
+
+.bodyMenu {
+    font-family: var(--fuenteprincipal);
+    font-size: var(--fontsize);
+    background-color: var(--colorsecundario);
+}
+
+.mainMenu .container {
+    padding: calc(var(--margingrid)*1) var(--margingrid);
+}
+
+.mainMenu .container img{
+    display: block;
+}
+
+.mainMenu .container .grid section {
+    
+    padding: calc(var(--margingrid)*1) calc(var(--margingrid)*4);
+    position: relative;
+}
+
+.mainMenu .container .title h2 {
+    color: white;
+    font-family: var(--fuentesecundaria);
+    font-size: 3em;
+    text-align: center;
+}
+
+.mainMenu .container  .title h2 span {
+    color: var(--colorprincipal);
+}
+
+.mainMenu .container .title .underline {
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: var(--margingrid);
+}
+
+.mainMenu .container .title .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--colorprincipal);
+}
+
+.mainMenu .container .title .underline span {
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+.mainMenu  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--margingrid);
+    margin-bottom: calc(var(--margingrid)*2);
+}
+
+.mainMenu .grid article{
+    padding: calc(var(--margingrid)*.7) 0;
+}
+.mainMenu .grid h3 {
+    color: white;
+    font-style: var(--fuenteprincipal);
+    font-weight: 700;
+    margin-bottom: calc(var(--margingrid)*.5);  
+    font-size: .9em;
+}
+
+.mainMenu h4 {
+   
+    font-style: var(--fuenteprincipal);
+    font-weight: 700;
+    color: white;
+    font-size: .7em;  
+    padding: var(--margingrid);
+    
+    
+}
+
+.mainMenu h5 {
+   
+    font-style: var(--fuenteprincipal);
+    font-weight: 700;
+    color: var(--colorprincipal);
+    font-size: .9em;  
+    
+    float: right;  
+    transform: translatey(-23px);
+    
+}
+
+.mainMenu .grid p{
+    font-size: .7em;
+    color: white;
+    margin-bottom: .5em;
+}
+
+.mainMenu .grid .more{
+    text-decoration: none;
+    font-size: .7em;
+    color:var(--colorprincipal);
+    font-weight: 700;
+    
+}
+
+.mainMenu .grid .img{
+    margin-top: var(--margingrid);
+    
+}
+
+.mainMenu .grid .grid1 .textos .menus div:hover {
+background-color: var(--colorprincipal);
+
+}
+
+.mainMenu .grid .grid1 .textos .menus {
+    margin: calc(var(--margingrid)*1.5) calc(var(--margingrid)*.5);
+}
+
+.underline{
+    width: 10%;
+}
+.underline hr{
+    border-color: var(--colorprincipal);
+}
+
+.mainMenu .grid .grid1 .textos .oferta p {
+    padding: var(--margingrid) 0;
+
+}
+
+/* inicio main blog */
+
+.mainBlog .container {
+    padding: calc(var(--margingrid)*1) var(--margingrid);
+}
+
+.mainBlog .container img{
+    display: block;
+}
+
+.mainBlog .container .grid section {
+    
+    
+    position: relative;
+}
+
+.mainBlog .container .title h2 {
+    color: black;
+    font-family: var(--fuentesecundaria);
+    font-size: 3em;
+    text-align: center;
+}
+
+.mainBlog .container  .title h2 span {
+    color: var(--colorprincipal);
+}
+
+.mainBlog .container .title .underline {
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: var(--margingrid);
+}
+
+.mainBlog .container .title .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--colorprincipal);
+}
+
+.mainBlog .container .title .underline span {
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+.mainBlog  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--margingrid);
+    margin-bottom: calc(var(--margingrid)*2);
+}
+
+.mainBlog .grid article{
+    padding: calc(var(--margingrid)*.7);
+}
+.mainBlog .grid h3 {
+    
+    font-style: var(--fuenteprincipal);
+    font-weight: 700;
+    margin-bottom: calc(var(--margingrid)*.5);  
+}
+
+.mainBlog .grid h4 {
+   
+    font-style: var(--fuenteprincipal);
+    font-weight: 700;
+    color: var(--colorprincipal);
+    font-size: .7em;  
+    margin-bottom: calc(var(--margingrid)*.5);  
+}
+
+.mainBlog .grid p{
+    font-size: .7em;
+}
+
+.mainBlog .grid .more{
+    text-decoration: none;
+    font-size: .7em;
+    color:var(--colorprincipal);
+    font-weight: 700;
+}
+
+.mainBlog .grid .fecha{
+     padding: calc(var(--margingrid));
+     position: absolute;
+     background-color: rgba(240, 62, 62, 0.788);
+     text-align: center;
+     align-items: center;
+     color: white;
+     font-weight: 700;
+     font-size: 1em;
+     justify-content: center;
+     top: 0px;
+     left:0px;
+            
+}
+
+
 
 /* mediaquerys */
 
@@ -379,6 +714,29 @@ main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
     main #ourservices .grid article:last-child {
         grid-column: 3/4;
     }
+
+    .mainBlog  .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+
+    .mainBlog .grid .fecha{
+        padding: calc(var(--margingrid)*1.5);
+        position: absolute;
+        background-color: rgba(240, 62, 62, 0.788);
+        text-align: center;
+        align-items: center;
+        color: white;
+        font-weight: 700;
+        font-size: 1em;
+        justify-content: center;
+        top: 0px;
+        left:0px;
+               
+    }
+
+   
+   
 }
 
 @media(min-width: 1004px) {
@@ -395,5 +753,30 @@ main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
     header .menu li a {
         border: 0px;
         padding: 0.5em calc(var(--margingrid));
+    }
+
+    .mainMenu .grid .grid1{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: repeat(1,1fr);
+
+    }
+
+    .mainMenu .grid .grid1 .imagenes .img{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin-left: calc(var(--margingrid)*5);
+       
+        
+    }
+
+    .mainMenu .grid .grid1 .imagenes article{
+        padding:calc(var(--margingrid)*2);
+    }
+
+    .mainMenu .grid .grid1 .textos {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+
     }
 }
