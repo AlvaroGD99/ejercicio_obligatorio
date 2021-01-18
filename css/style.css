@@ -441,12 +441,16 @@ footer a:hover {
 .bodyMenu {
     font-family: var(--fuenteprincipal);
     font-size: var(--fontsize);
+    
+}
+.mainMenu{
     background-color: var(--colorsecundario);
 }
-
 .mainMenu .container {
     padding: calc(var(--margingrid)*1) var(--margingrid);
+   
 }
+
 
 .mainMenu .container img{
     display: block;
